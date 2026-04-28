@@ -1,0 +1,32 @@
+{
+  "nome": "Thor",
+  "especie": "Cachorro",
+  "raca": "Pastor Alemão",
+  "idade": 4,
+  "peso": 30,
+  "nome_dono": "Carlos"
+}
+{
+  "nome": "Mimi",
+  "especie": "Gato",
+  "raca": "Persa",
+  "idade": 2,
+  "peso": 4,
+  "nome_dono": "Ana"
+}
+{
+  "nome": "Piu",
+  "especie": "Pássaro",
+  "raca": "Calopsita",
+  "idade": 1,
+  "peso": 0.1,
+  "nome_dono": "Juliana"
+}
+{
+  "nome": "Casco",
+  "especie": "Tartaruga",
+  "raca": "Tigre d'água",
+  "idade": 10,
+  "peso": 5,
+  "nome_dono": "Roberto"
+}

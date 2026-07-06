@@ -1,0 +1,42 @@
+{
+  "name": "api-tutores-pets",
+  "version": "1.0.0",
+  "description": "API de controle de Tutores e Pets, com autenticacao de Usuario via JWT",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ts-node-dev --inspect -r tsconfig-paths/register --transpile-only --ignore-watch node_modules src/shared/http/server.ts",
+    "typeorm": "ts-node -r tsconfig-paths/register ./node_modules/typeorm/cli.js",
+    "migration:run": "ts-node -r tsconfig-paths/register ./node_modules/typeorm/cli.js migration:run -d ./src/shared/typeorm/data-source.ts",
+    "migration:generate": "npm run typeorm migration:generate -d src/shared/typeorm/data-source.ts src/shared/typeorm/migrations"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "celebrate": "^15.0.3",
+    "cors": "^2.8.6",
+    "date-fns": "^4.3.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.22.1",
+    "express-async-errors": "^3.1.1",
+    "handlebars": "^4.7.8",
+    "jsonwebtoken": "^9.0.3",
+    "multer": "^2.1.1",
+    "nodemailer": "^6.9.15",
+    "pg": "^8.20.0",
+    "ts-node-dev": "^2.0.0",
+    "typeorm": "^0.3.28",
+    "typescript": "^5.6.2"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/joi": "^17.2.2",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/multer": "^2.0.0",
+    "@types/nodemailer": "^6.4.16",
+    "@types/node": "^25.6.0",
+    "tsconfig-paths": "^4.2.0"
+  }
+}
